@@ -1,0 +1,28 @@
+[general]
+import = [
+  "~/.config/alacritty/themes/tokyo_night.toml"
+]
+
+[env]
+TERM = "xterm-256color"
+
+[window]
+padding = { x = 4, y = 4 }
+dimensions = { columns = 254, lines = 63 }
+# decorations = "none"
+opacity = 0.9
+blur = true
+
+[font]
+size = 12
+
+[font.bold]
+# family = "MesloLGS Nerd Font Mono"
+family = "JetBrainsMono Nerd Font Mono"
+style = "Bold"
+
+[font.normal]
+# family = "MesloLGS Nerd Font Mono"
+family = "JetBrainsMono Nerd Font Mono"
+style = "Medium"
+
