@@ -1,5 +1,9 @@
 #!/usr/bin/env zsh
 
+INPUT_FILE="/home/qui3tqu3st/qui3tqu3st/programming/C++/input.txt"
+OUTPUT_FILE="/home/qui3tqu3st/qui3tqu3st/programming/C++/output.txt"
+
+
 # Ensure a file is provided
 if [ -z "$1" ]; then
   # echo "Usage: run <filename>"
@@ -38,11 +42,13 @@ ts)
 
 cpp)
   # echo "Compiling C++..."
+  # g++ "$FILE" -o a.out && ./a.out < "$INPUT_FILE" > "$OUTPUT_FILE" && rm a.out
   g++ "$FILE" -o a.out && ./a.out && rm a.out
   ;;
 
 c)
   # echo "Compiling C..."
+  # gcc "$FILE" -o a.out && ./a.out < "$INPUT_FILE" > "$OUTPUT_FILE" && rm a.out
   gcc "$FILE" -o a.out && ./a.out && rm a.out
   ;;
 

@@ -11,6 +11,8 @@ alias update="sudo pacman -Syu"
 # alias hc="~/.config/hypr/"
 alias nv="nvim"
 alias dotfiles="cd ~/qui3tqu3st-dotfiles/"
+alias dev="cd ~/qui3tqu3st/programming/"
+alias config="cd ~/.config/"
 
 # git related aliased
 alias lg="lazygit"
@@ -23,6 +25,10 @@ alias cleansnapper="zsh ~/qui3tqu3st-dotfiles/scripts/cleansnapshots.sh"
 
 # custom code runner
 alias r="zsh ~/qui3tqu3st-dotfiles/scripts/runner.sh"
+
+# input script - for c/c++ files
+alias input="zsh ~/qui3tqu3st-dotfiles/scripts/input.sh"
+alias output="zsh ~/qui3tqu3st-dotfiles/scripts/output.sh"
 
 # Cleanup orphaned packages
 # alias cleanup="sudo pacman -Rsn $(pacman -Qtdq)"
