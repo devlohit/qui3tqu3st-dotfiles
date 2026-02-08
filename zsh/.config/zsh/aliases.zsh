@@ -26,9 +26,10 @@ alias cleansnapper="zsh ~/qui3tqu3st-dotfiles/scripts/cleansnapshots.sh"
 # custom code runner
 alias r="zsh ~/qui3tqu3st-dotfiles/scripts/runner.sh"
 
-# input script - for c/c++ files
+# competetive programming
 alias input="zsh ~/qui3tqu3st-dotfiles/scripts/input.sh"
 alias output="zsh ~/qui3tqu3st-dotfiles/scripts/output.sh"
+alias create="cp ~/qui3tqu3st/programming/C++/template.cpp"
 
 # Cleanup orphaned packages
 # alias cleanup="sudo pacman -Rsn $(pacman -Qtdq)"
