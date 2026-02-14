@@ -1,0 +1,79 @@
+/* Wofi Configuration */
+
+window {
+    margin: 0px;
+    border: 2px solid #cba6f7;
+    border-radius: 15px;
+    background-color: #1e1e2e;
+    font-family: "JetBrainsMono Nerd Font Mono";
+    font-size: 14px;
+}
+
+#input {
+    margin: 10px;
+    border: 2px solid #313244;
+    border-radius: 10px;
+    padding: 8px;
+    background-color: #313244;
+    color: #cdd6f4;
+}
+
+#input:focus {
+    border: 2px solid #cba6f7;
+}
+
+#inner-box {
+    margin: 10px;
+    border: none;
+    background-color: #1e1e2e;
+}
+
+#outer-box {
+    margin: 0px;
+    border: none;
+    background-color: #1e1e2e;
+}
+
+#scroll {
+    margin: 0px;
+    border: none;
+}
+
+#text {
+    margin: 5px;
+    padding: 0px;
+    background: none;
+    border: none;
+    color: #cdd6f4;
+}
+
+#entry {
+    border: none;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+#entry image {
+  background: transparent;
+}
+
+#entry:selected {
+    background: linear-gradient(90deg, #cba6f7 0%, #f5c2e7 100%);
+}
+
+#entry:selected #text {
+  color: #1e1e2e;
+  font-weight: bold;
+}
+
+#entry:hover {
+    background-color: #313244;
+}
+
+separator {
+    background: transparent;
+    border: none;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+}
