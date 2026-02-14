@@ -3,7 +3,7 @@ echo "--- BTRFS SNAPPER SNAPSHOT CLEANING ---"
 TOTAL=$(sudo snapper list | awk 'NR>2 && $1!=0' | wc -l)
 echo "--- CURRENT SNAPSHOT COUNT : $TOTAL ---"
 
-KEEP=2
+KEEP=4
 if [ $TOTAL -gt $KEEP ]; then
   DELETE_COUNT=$((TOTAL - KEEP))
   FIRST=$(sudo snapper list | awk 'NR>2 && $1!=0 {print $1}' | head -n 1)
