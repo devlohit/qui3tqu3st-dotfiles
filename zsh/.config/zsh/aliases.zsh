@@ -31,6 +31,10 @@ alias input="zsh ~/qui3tqu3st-dotfiles/scripts/input.sh"
 alias output="zsh ~/qui3tqu3st-dotfiles/scripts/output.sh"
 alias create="cp ~/qui3tqu3st/programming/C++/template.cpp"
 
+# hyprland specific configs
+alias reloadwb="pkill waybar && hyprctl dispatch exec waybar"
+
+
 # Cleanup orphaned packages
 # alias cleanup="sudo pacman -Rsn $(pacman -Qtdq)"
 
