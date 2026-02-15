@@ -35,6 +35,9 @@ alias create="cp ~/qui3tqu3st/programming/C++/template.cpp"
 alias reloadwb="pkill waybar && hyprctl dispatch exec waybar"
 
 
+# Monitor related aliases [hyprland]
+alias sclt="zsh ~/qui3tqu3st-dotfiles/scripts/sc-laptop-toggle.sh"
+
 # Cleanup orphaned packages
 # alias cleanup="sudo pacman -Rsn $(pacman -Qtdq)"
 
