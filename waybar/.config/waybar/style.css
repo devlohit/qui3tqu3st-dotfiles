@@ -162,6 +162,7 @@ window#waybar.hidden {
 #custom-power:hover {
     background: #f38ba8;
     color: #1e1e2e;
+    transition: all 0.5s ease;
 }
 
 tooltip {
