@@ -82,7 +82,7 @@
         "format": "{icon}",
         "format-disabled": "󰂲",
         "format-off": "󰂲",
-        "format-on": "󰂯",
+        "format-on": "",
         "format-connected": "󰂱",
         "format-icons": {
             "enabled": "󰂯",

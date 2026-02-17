@@ -120,6 +120,7 @@ window#waybar.hidden {
 }
 
 #bluetooth.disabled {
+  font-size: 17px;
   color: #f38ba8;
 }
 
