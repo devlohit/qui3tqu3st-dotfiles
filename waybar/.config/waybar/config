@@ -9,7 +9,7 @@
         "hyprland/workspaces",
         "pulseaudio",
         "network",
-        "tray",
+        "bluetooth",
         "battery",
         "custom/power",
         "power-profiles-daemon",
@@ -64,7 +64,7 @@
     },
     
     "pulseaudio": {
-        "format": "",
+        "format": "󰕾",
         "format-muted": "󰝟",
         "format-icons": {
             "headphone": "",
@@ -77,16 +77,36 @@
         },
         "on-click": "pavucontrol"
     },
-    
-    "network": {
-        "format-wifi": "",
-        "format-ethernet": "",
-        "format-disconnected": "",
-        "tooltip-format": "{ifname}: {ipaddr}/{cidr}\nSignal: {signalStrength}%\nUp: {bandwidthUpBytes} Down: {bandwidthDownBytes}",
-        "on-click": "nm-connection-editor",
-        "interval": 5
+
+    "bluetooth": {
+        "format": "{icon}",
+        "format-disabled": "󰂲",
+        "format-off": "󰂲",
+        "format-on": "󰂯",
+        "format-connected": "󰂱",
+        "format-icons": {
+            "enabled": "󰂯",
+            "disabled": "󰂲"
+        },
+        "tooltip-format": "󰂯  {status}",
+        "tooltip-format-connected": "󰂱  {device_alias}\n  {num_connections} connected",
+        "on-click": "blueman-manager"
     },
     
+    "network": {
+        "interval": 3,
+        "format-wifi": "{icon}",
+        "format-ethernet": "󰈀",
+        "format-disconnected": "󰤮",
+        "format-icons": {
+            "wifi": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"]
+        },
+        "tooltip-format-wifi": "󰤨  {essid}\n  Signal: {signalStrength}%\n  IP: {ipaddr}",
+        "tooltip-format-ethernet": "󰈀  Ethernet\n  IP: {ipaddr}",
+        "tooltip-format-disconnected": "󰤮  Disconnected",
+        "on-click": "nm-connection-editor"
+    },
+
     "battery": {
         "interval": 60,
         "states": {

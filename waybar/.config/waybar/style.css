@@ -24,6 +24,7 @@ window#waybar.hidden {
 #memory,
 #pulseaudio,
 #network,
+#bluetooth,
 #battery,
 #tray,
 #custom-power,
@@ -43,13 +44,13 @@ window#waybar.hidden {
 
 #workspaces {
     margin: 5px 0px;
-    padding: 5px 5px;
+    padding: 6px 6px;
     border-radius: 0px;
 }
 
 #workspaces button {
     /* padding: 0 10px; */
-    padding: 1px;
+    padding: 1px 4px;
     margin: 0 3px;
     color: #6c7086;
     background: transparent;
@@ -64,7 +65,7 @@ window#waybar.hidden {
     background: linear-gradient(90deg, #cba6f7 0%, #f5c2e7 100%);
     color: #11111b;
     font-weight: bold;
-    padding: 1px;
+    padding: 1px 4px;
 
     /* smooth gliding animation */
     transition: background 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
@@ -89,7 +90,6 @@ window#waybar.hidden {
 }
 
 #pulseaudio {
-    
     font-weight: bold;
     color: #89b4fa;
     margin-right: 0;
@@ -102,9 +102,20 @@ window#waybar.hidden {
 }
 
 #network {
+    font-size: 20px;
     color: #94e2d5;
     margin-right: 0;
     margin-left: 0;
+    border-radius: 0;
+}
+
+#bluetooth {
+    font-size: 18px;
+    color: #a6e3a1;
+    padding-left: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 0 20px 20px 0;
 }
 
 #network.disconnected {
@@ -156,7 +167,7 @@ window#waybar.hidden {
     font-size: 20px;
     margin-right: 0px;
     margin-left: 10px;
-    padding: 0 12px;
+    padding: 0 14px;
     border-radius: 20px;
 }
 
@@ -171,7 +182,7 @@ window#waybar.hidden {
     font-size: 20px;
     margin-right: 0px;
     margin-left: 10px;
-    padding: 0 12px;
+    padding: 0 14px;
     border-radius: 20px;
 }
 
