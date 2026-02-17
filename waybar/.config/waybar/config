@@ -11,8 +11,8 @@
         "network",
         "tray",
         "battery",
-        "custom/power"
-
+        "custom/power",
+        "power-profiles-daemon",
     ],
         
     "clock": {
@@ -108,5 +108,17 @@
         "format": "⏻",
         "tooltip": false,
         "on-click": "wlogout -l ~/.config/wlogout/layout -b 5 -c 5 -r 1 --margin-top 400 --margin-bottom 400"
-    }
+    },
+
+    "power-profiles-daemon": {
+        "format": "{icon}",
+        "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+        "tooltip": true,
+        "format-icons": {
+            "default": "󱐋",
+            "performance": "󱐋",
+            "balanced": "",
+            "power-saver": "󰌪"
+        }
+    },
 }
