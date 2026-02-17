@@ -104,7 +104,7 @@
         "tooltip-format-wifi": "󰤨  {essid}\n  Signal: {signalStrength}%\n  IP: {ipaddr}",
         "tooltip-format-ethernet": "󰈀  Ethernet\n  IP: {ipaddr}",
         "tooltip-format-disconnected": "󰤮  Disconnected",
-        "on-click": "nm-connection-editor"
+        "on-click": "kitty --title nmtui -e nmtui"
     },
 
     "battery": {
