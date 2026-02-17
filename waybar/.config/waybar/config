@@ -39,7 +39,7 @@
         "on-click": "activate",
         "all-outputs": true,
         "persistent-workspaces": {
-            "*": 5
+            "*": 4 
         },
         "format-icons": {
             "active": "",
