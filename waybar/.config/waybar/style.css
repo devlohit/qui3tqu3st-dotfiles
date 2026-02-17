@@ -90,6 +90,7 @@ window#waybar.hidden {
 }
 
 #pulseaudio {
+    font-size: 17px;
     font-weight: bold;
     color: #89b4fa;
     margin-right: 0;
@@ -102,7 +103,7 @@ window#waybar.hidden {
 }
 
 #network {
-    font-size: 20px;
+    font-size: 22px;
     color: #94e2d5;
     margin-right: 0;
     margin-left: 0;
@@ -110,7 +111,7 @@ window#waybar.hidden {
 }
 
 #bluetooth {
-    font-size: 18px;
+    font-size: 17px;
     color: #a6e3a1;
     padding-left: 10px;
     margin-left: 0;
