@@ -50,8 +50,8 @@ window#waybar.hidden {
 
 #workspaces button {
     /* padding: 0 10px; */
-    padding: 1px 4px;
-    margin: 0 3px;
+    padding: 0px 5px;
+    margin: 0 2px;
     color: #6c7086;
     background: transparent;
     border-radius: 15px;
@@ -62,10 +62,10 @@ window#waybar.hidden {
 }
 
 #workspaces button.active {
-    background: linear-gradient(90deg, #cba6f7 0%, #f5c2e7 100%);
+    background: linear-gradient(90deg,rgba(198, 160, 246, 1) 0%, rgba(138, 173, 244, 1) 100%);
     color: #11111b;
     font-weight: bold;
-    padding: 1px 4px;
+    padding: 0px 5px;
 
     /* smooth gliding animation */
     transition: background 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
@@ -173,14 +173,14 @@ window#waybar.hidden {
     font-size: 20px;
     margin-right: 0px;
     margin-left: 10px;
-    padding: 0 14px;
+    padding: 0 15px;
     border-radius: 20px;
 }
 
 #custom-power:hover {
     background: #f38ba8;
     color: #1e1e2e;
-    transition: all 0.5s ease;
+    transition: all 0.8s ease;
 }
 
 #power-profiles-daemon {
@@ -188,14 +188,14 @@ window#waybar.hidden {
     font-size: 20px;
     margin-right: 0px;
     margin-left: 10px;
-    padding: 0 14px;
+    padding: 0 15px;
     border-radius: 20px;
 }
 
 #power-profiles-daemon:hover {
     background: #89b4fa;
     color: #1e1e2e;
-    transition: all 0.5s ease;
+    transition: all 0.8s ease;
 }
 
 tooltip {
