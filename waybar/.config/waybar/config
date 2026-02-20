@@ -10,6 +10,7 @@
         "pulseaudio",
         "network",
         "bluetooth",
+        "tray",
         "battery",
         "custom/power",
         "power-profiles-daemon",
@@ -121,7 +122,9 @@
     },
     
     "tray": {
-        "spacing": 20
+        "icon-size": 17,
+        "spacing": 10,
+        "smooth-scrolling-threshold": 1.0
     },
     
     "custom/power": {
