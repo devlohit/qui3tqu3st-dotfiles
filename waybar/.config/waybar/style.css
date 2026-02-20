@@ -161,7 +161,7 @@ window#waybar.hidden {
 
 
 #tray > .passive {
-    -gtk-icon-effect: dim;
+    -gtk-icon-effect: highlight;
 }
 
 #tray > .needs-attention {
