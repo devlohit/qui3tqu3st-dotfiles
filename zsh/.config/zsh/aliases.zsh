@@ -13,7 +13,7 @@ alias nv="nvim"
 alias dotfiles="cd ~/qui3tqu3st-dotfiles/"
 alias dev="cd ~/qui3tqu3st/programming/"
 alias config="cd ~/.config/"
-alias refreshmirrors = "sudo reflector --country 'India' --latest 10 --age 5 --fastest 10 --protocol https --sort rate --save /etc/pacman.d/mirrorlist"
+alias refreshmirrors="sudo reflector --country 'India' --latest 10 --age 5 --fastest 10 --protocol https --sort rate --save /etc/pacman.d/mirrorlist"
 
 # git related aliased
 alias lg="lazygit"
