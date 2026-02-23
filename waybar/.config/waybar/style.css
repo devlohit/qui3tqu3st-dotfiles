@@ -31,7 +31,8 @@ window#waybar.hidden {
 #tray,
 #custom-power,
 #power-profiles-daemon {
-    background:  rgba(30, 30, 46, 1);
+    /* background:  rgba(30, 30, 46, 1); */
+    background: #1e1e2e;
     padding: 5px 15px;
     margin: 5px 5px;
     border-radius: 20px;    
