@@ -4,6 +4,9 @@ export ZSH="/usr/share/oh-my-zsh"
 # eval starship
 eval "$(starship init zsh)"
 
+# USER DEFINED PATH VARIABLES
+export PATH="$HOME/.local/bin:$PATH"
+
 # Uncomment the following line if pasting URLs and other text is messed up.
 DISABLE_MAGIC_FUNCTIONS="true"
 
