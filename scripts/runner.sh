@@ -59,7 +59,7 @@ java)
 
 rs)
   # echo "Running Rust..."
-  rustc "$FILE" -o "$NAME.out" && "./$NAME.out"
+  rustc "$FILE" -o "$NAME.out" && "./$NAME.out" && rm "./$NAME.out"
   ;;
 
 go)

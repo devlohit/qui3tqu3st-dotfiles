@@ -1,1 +1,9 @@
-theme = "amberwood"
+theme = "catppuccin_mocha"
+
+[keys.normal]
+C-e = [
+  ":sh rm -f /tmp/helix-yazi",
+  ":insert-output yazi '%{buffer_name}' --chooser-file=/tmp/helix-yazi",
+  ":open %sh{cat /tmp/helix-yazi}",
+  ":redraw"
+]
