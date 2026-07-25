@@ -33,6 +33,11 @@ alias input="zsh ~/qui3tqu3st-dotfiles/scripts/input.sh"
 alias output="zsh ~/qui3tqu3st-dotfiles/scripts/output.sh"
 alias create="cp ~/qui3tqu3st/programming/C++/template.cpp"
 
+
+# tmux related aliases
+alias tns="tmux new-session"
+alias tnw="tmux new-window"
+
 # hyprland specific configs
 alias reloadwb="pkill waybar && hyprctl dispatch exec waybar"
 
