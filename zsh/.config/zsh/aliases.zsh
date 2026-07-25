@@ -35,7 +35,7 @@ alias create="cp ~/qui3tqu3st/programming/C++/template.cpp"
 
 
 # tmux related aliases
-alias tns="tmux new-session"
+alias tns="tmux new -s"
 alias tnw="tmux new-window"
 
 # hyprland specific configs
