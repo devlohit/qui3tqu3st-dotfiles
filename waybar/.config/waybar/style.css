@@ -3,7 +3,7 @@
 * {
     border: none;
     border-radius: 0;
-    font-family: "SF Pro Display", "Font Awesome 6 Free", sans-serif;
+    font-family: "JetBrains Mono Nerd Font Mono Bold", "Font Awesome 6 Free", sans-serif;
     font-size: 14px;
     min-height: 0;
  }
@@ -33,14 +33,14 @@ window#waybar.hidden {
 #power-profiles-daemon {
     /* background:  rgba(30, 30, 46, 1); */
     background: #1e1e2e;
-    padding: 5px 15px;
+    padding: 6px 16px;
     margin: 5px 5px;
     border-radius: 20px;    
 }
 
 #custom-arch {
-    font-size: 20px;
-    padding: 0 16px;
+    font-size: 21px;
+    padding: 0 15px;
     color: #74c7ec;
 }
 
@@ -119,10 +119,10 @@ window#waybar.hidden {
 }
 
 #pulseaudio {
-    font-size: 17px;
+    font-size: 22px;
     font-weight: bold;
     color: #89b4fa;
-    margin-right: 0;
+    margin-right: -2px;
     margin-left: 0;
     border-radius: 0;
 }
@@ -132,7 +132,7 @@ window#waybar.hidden {
 }
 
 #network {
-    font-size: 22px;
+    font-size: 21px;
     color: #94e2d5;
     margin-right: 0;
     margin-left: 0;
@@ -140,7 +140,7 @@ window#waybar.hidden {
 }
 
 #bluetooth {
-    font-size: 17px;
+    font-size: 21px;
     color: #a6e3a1;
     padding-left: 10px;
     margin-left: 0;
@@ -200,7 +200,7 @@ window#waybar.hidden {
 
 #custom-power {
     color: #f38ba8;
-    font-size: 20px;
+    font-size: 21px;
     margin-right: 0px;
     margin-left: 10px;
     padding: 0 15px;
@@ -215,7 +215,7 @@ window#waybar.hidden {
 
 #power-profiles-daemon {
     color: #89b4fa;
-    font-size: 20px;
+    font-size: 21px;
     margin-right: 0px;
     margin-left: 10px;
     padding: 0 15px;
