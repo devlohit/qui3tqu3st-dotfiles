@@ -3,7 +3,7 @@
 * {
     border: none;
     border-radius: 0;
-    font-family: "JetBrains Mono Nerd Font Mono Bold", "Font Awesome 6 Free", sans-serif;
+    font-family: "Rubik", "Font Awesome 6 Free", sans-serif;
     font-size: 14px;
     min-height: 0;
  }
@@ -39,8 +39,9 @@ window#waybar.hidden {
 }
 
 #custom-arch {
-    font-size: 21px;
-    padding: 0 15px;
+    min-width: 22px;
+    font-size: 17px;
+    padding: 0 10px 0 7px; 
     color: #74c7ec;
 }
 
@@ -49,7 +50,7 @@ window#waybar.hidden {
     margin-right: 0;
 }
 #taskbar button {
-    padding: 5px 12px;
+    padding: 5px 13px;
 }
 
 #taskbar button:not(:last-child){
@@ -119,10 +120,10 @@ window#waybar.hidden {
 }
 
 #pulseaudio {
-    font-size: 22px;
+    font-size: 17px;
     font-weight: bold;
     color: #89b4fa;
-    margin-right: -2px;
+    margin-right: -4px;
     margin-left: 0;
     border-radius: 0;
 }
@@ -132,7 +133,7 @@ window#waybar.hidden {
 }
 
 #network {
-    font-size: 21px;
+    font-size: 15px;
     color: #94e2d5;
     margin-right: 0;
     margin-left: 0;
@@ -140,7 +141,7 @@ window#waybar.hidden {
 }
 
 #bluetooth {
-    font-size: 21px;
+    font-size: 15px;
     color: #a6e3a1;
     padding-left: 10px;
     margin-left: 0;
@@ -200,10 +201,10 @@ window#waybar.hidden {
 
 #custom-power {
     color: #f38ba8;
-    font-size: 21px;
+    font-size: 17px;
     margin-right: 0px;
     margin-left: 10px;
-    padding: 0 15px;
+    padding: 0 12px;
     border-radius: 20px;
 }
 
@@ -215,10 +216,10 @@ window#waybar.hidden {
 
 #power-profiles-daemon {
     color: #89b4fa;
-    font-size: 21px;
+    font-size: 17px;
     margin-right: 0px;
     margin-left: 10px;
-    padding: 0 15px;
+    padding: 0 18px 0 12px;
     border-radius: 20px;
 }
 

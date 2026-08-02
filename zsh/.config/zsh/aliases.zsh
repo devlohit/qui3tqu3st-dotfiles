@@ -43,8 +43,7 @@ alias tas="tmux attach-session"
 alias tnw="tmux new-window"
 
 # hyprland specific configs
-alias reloadwb="pkill waybar && hyprctl dispatch exec waybar"
-
+alias reloadwb='pkill waybar && hyprctl dispatch "hl.dsp.exec_cmd(\"waybar\")"'
 
 # Monitor related aliases [hyprland]
 alias sclt="zsh ~/qui3tqu3st-dotfiles/scripts/sc-laptop-toggle.sh"
