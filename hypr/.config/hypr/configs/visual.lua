@@ -53,6 +53,7 @@ hl.animation({ leaf = "specialWorkspace", enabled = true, speed = 3, bezier = "w
 
 hl.config({
     dwindle = {
+        force_split = 2,
         preserve_split = true,
         smart_split = false,
         smart_resizing = true,

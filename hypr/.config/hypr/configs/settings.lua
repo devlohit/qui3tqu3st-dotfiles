@@ -20,7 +20,7 @@ hl.config({
         layout = "dwindle",
         resize_on_border = true,
         col = {
-            active_border = { colors = { colors.teal, colors.blue }, angle = 45 },
+            active_border = { colors = { colors.teal, colors.flamingo, colors.teal, colors.lavender }, angle = 45 },
             inactive_border = colors.surface0,
         },
     },
