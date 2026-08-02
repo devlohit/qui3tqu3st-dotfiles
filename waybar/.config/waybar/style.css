@@ -159,6 +159,7 @@ window#waybar.hidden {
 }
 
 #battery {
+    font-weight: 600;
     color: #a6e3a1;
     padding: 0px 11px;
     margin-left: 10px;
