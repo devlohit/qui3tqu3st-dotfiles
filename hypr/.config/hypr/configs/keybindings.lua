@@ -66,9 +66,9 @@ hl.bind(mainMod .. " + " .. "down", hl.dsp.focus({ direction = "down" }))
 
 -- ALT TAB Switcher
 
-hl.bind("ALT" .. " + " .. "Tab", hl.dsp.exec_cmd("snappy-switcher next"))
+hl.bind("ALT + TAB", hl.dsp.exec_cmd("snappy-switcher next --mod --workspace alt"))
 
-hl.bind("ALT + SHIFT" .. " + " .. "Tab", hl.dsp.exec_cmd("snappy-switcher prev"))
+hl.bind("ALT + SHIFT + TAB", hl.dsp.exec_cmd("snappy-switcher prev --mod alt shift"))
 
 -- Switch workspaces
 

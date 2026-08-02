@@ -1,0 +1,81 @@
+/* Wlogout - Catppuccin Mocha Theme */
+
+* {
+    background-image: none;
+    box-shadow: none;
+}
+
+window {
+    background-color: rgba(30, 30, 46, 0.95);
+}
+
+button {
+    border-radius: 10px;        /* Smaller radius */
+    border: 2px solid #313244;
+    background-color: #1e1e2e;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20%;       /* Bigger icon relative to button */
+    margin: 20px;               /* Less space between buttons */
+    min-width: 80px;           /* Set button width */
+    min-height: 80px;          /* Set button height */
+    /* transition: all 0.3s ease; */
+}
+
+button:focus,
+button:active,
+button:hover {
+    background-color: #313244;
+    border: 2px solid #cba6f7;
+    outline-style: none;
+}
+
+#lock {
+    background-image: image(url("/usr/share/wlogout/icons/lock.png"), url("/usr/local/share/wlogout/icons/lock.png"));
+}
+
+#lock:hover,
+#lock:focus,
+#lock:active {
+    border-color: #89b4fa;
+}
+
+#logout {
+    background-image: image(url("/usr/share/wlogout/icons/logout.png"), url("/usr/local/share/wlogout/icons/logout.png"));
+}
+
+#logout:hover,
+#logout:focus,
+#logout:active {
+    border-color: #f9e2af;
+}
+
+#shutdown {
+    background-image: image(url("/usr/share/wlogout/icons/shutdown.png"), url("/usr/local/share/wlogout/icons/shutdown.png"));
+}
+
+#shutdown:hover,
+#shutdown:focus,
+#shutdown:active {
+    border-color: #f38ba8;
+}
+
+#reboot {
+    background-image: image(url("/usr/share/wlogout/icons/reboot.png"), url("/usr/local/share/wlogout/icons/reboot.png"));
+}
+
+#reboot:hover,
+#reboot:focus,
+#reboot:active {
+    border-color: #fab387;
+}
+
+#suspend {
+    background-image: image(url("/usr/share/wlogout/icons/suspend.png"), url("/usr/local/share/wlogout/icons/suspend.png"));
+}
+
+#suspend:hover,
+#suspend:focus,
+#suspend:active {
+    border-color: #a6e3a1;
+}
