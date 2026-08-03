@@ -41,7 +41,7 @@ window#waybar.hidden {
 #custom-arch {
     min-width: 22px;
     font-size: 16px;
-    padding: 0 10px 0 5px; 
+    padding: 0 12px 0 7px; 
     color: #74c7ec;
 }
 
