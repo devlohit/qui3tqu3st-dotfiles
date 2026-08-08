@@ -34,9 +34,9 @@ hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "F", hl.dsp.window.fullscreen())
 
 hl.bind(mainMod .. " + " .. "V", hl.dsp.exec_cmd("cliphist list| wofi --dmenu| cliphist decode| wl-copy"))
 
-hl.bind(mainMod .. " + " .. "L", hl.dsp.exec_cmd("swaylock --effect-blur 10*8 --timestr \"%H:%M\""))
+hl.bind(mainMod .. " + " .. "L", hl.dsp.exec_cmd("hyprlock"))
 
-hl.bind("Print", hl.dsp.exec_cmd("grim -g \"$(slurp)\"-| swappy -f-"))
+hl.bind("Print", hl.dsp.exec_cmd('grim -g "$(slurp)"-| swappy -f-'))
 
 hl.bind(mainMod .. " + " .. "Print", hl.dsp.exec_cmd("grim ~/Pictures/Screenshots/$(date +'%Y%m%d_%H%M%S').png"))
 
