@@ -4,24 +4,24 @@
 [[language]]
 name = "python"
 auto-format = true
-language-servers = ["basedpyright", "ruff"]
+language-servers = ["basedpyright"]
+formatter = { command = "ruff", args = [ "format", "-"] }
 
 [language-server.basedpyright]
 command = "basedpyright-langserver"
 args = ["--stdio"]
 
-[language-server.ruff]
-command = "ruff"
-args = ["server"]
-
-[language.formatter]
-command = "ruff"
-args = ["format", "-"]
-
-
 # -- RUST -- #
 [[language]]
 name = "rust"
 formatter = { command = "rustfmt" }
+auto-format = true
+
+
+# -- LUA -- #
+[[language]]
+name = "lua"
+language-servers = ["lua-language-server"]
+formatter = { command = "stylua", args = ["-"]}
 auto-format = true
 
