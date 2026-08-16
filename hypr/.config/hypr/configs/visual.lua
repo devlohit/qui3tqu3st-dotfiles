@@ -13,31 +13,41 @@ local colors = require("configs.colors")
 -- Decoration
 
 hl.config({
-    decoration = {
-        rounding = 10,
-        active_opacity = 1.0,
-        inactive_opacity = 1.0,
-        fullscreen_opacity = 1.0,
-        blur = {
-            enabled = true,
-            size = 6,
-            passes = 3,
-            ignore_opacity = true,
-            new_optimizations = true,
-            xray = true,
-            noise = 0.12,
-            contrast = 1.5,
-        },
-    },
+	decoration = {
+		rounding = 10,
+		active_opacity = 1.0,
+		inactive_opacity = 1.0,
+		fullscreen_opacity = 1.0,
+		blur = {
+			enabled = true,
+			size = 6,
+			passes = 3,
+			ignore_opacity = true,
+			new_optimizations = true,
+			xray = true,
+			noise = 0.12,
+			contrast = 1.5,
+		},
+	},
+})
+
+hl.layer_rule({
+	name = "nwg-dock-blur",
+	match = {
+		namespace = "^nwg-dock$",
+	},
+	blur = true,
+	blur_popups = true,
+	ignore_alpha = 0.8,
 })
 
 -- Animations
 
-hl.curve("wind",   { type = "bezier", points = { {0.05, 0.9}, {0.1, 1.05} } })
-hl.curve("winIn",  { type = "bezier", points = { {0.1, 1.1},  {0.1, 1.0} } })
-hl.curve("winOut", { type = "bezier", points = { {0.3, 0},    {0.8, 0.15} } })
-hl.curve("liner",  { type = "bezier", points = { {1, 1},      {1, 1} } })
-hl.curve("linear", { type = "bezier", points = { {0.0, 0.0},  {1.0, 1.0} } })
+hl.curve("wind", { type = "bezier", points = { { 0.05, 0.9 }, { 0.1, 1.05 } } })
+hl.curve("winIn", { type = "bezier", points = { { 0.1, 1.1 }, { 0.1, 1.0 } } })
+hl.curve("winOut", { type = "bezier", points = { { 0.3, 0 }, { 0.8, 0.15 } } })
+hl.curve("liner", { type = "bezier", points = { { 1, 1 }, { 1, 1 } } })
+hl.curve("linear", { type = "bezier", points = { { 0.0, 0.0 }, { 1.0, 1.0 } } })
 
 hl.animation({ leaf = "windows", enabled = true, speed = 6, bezier = "wind", style = "slide" })
 hl.animation({ leaf = "windowsIn", enabled = true, speed = 6, bezier = "winIn", style = "slide" })
@@ -47,36 +57,36 @@ hl.animation({ leaf = "border", enabled = true, speed = 2, bezier = "linear" })
 hl.animation({ leaf = "borderangle", enabled = true, speed = 60, bezier = "linear", style = "loop" })
 hl.animation({ leaf = "fade", enabled = true, speed = 2, bezier = "default" })
 hl.animation({ leaf = "workspaces", enabled = true, speed = 4, bezier = "wind" })
-hl.animation({ leaf = "specialWorkspace", enabled = true, speed = 3, bezier = "wind", style = "slidevert" })-- Layouts
+hl.animation({ leaf = "specialWorkspace", enabled = true, speed = 3, bezier = "wind", style = "slidevert" }) -- Layouts
 
 -- Dwindles
 
 hl.config({
-    dwindle = {
-        force_split = 2,
-        preserve_split = true,
-        smart_split = false,
-        smart_resizing = true,
-    },
+	dwindle = {
+		force_split = 2,
+		preserve_split = true,
+		smart_split = false,
+		smart_resizing = true,
+	},
 })
 
 -- Windowrules
 
 hl.window_rule({
-    name  = "floating-nmtui",
-    match = {
-        class = "kitty",
-        title = "nmtui",
-    },
-    size = { 1000, 800 },
-    float = true,
-    center = true,
+	name = "floating-nmtui",
+	match = {
+		class = "kitty",
+		title = "nmtui",
+	},
+	size = { 1000, 800 },
+	float = true,
+	center = true,
 })
 
 -- Cursors
 
 hl.config({
-    cursor = {
-        no_hardware_cursors = false,
-    },
+	cursor = {
+		no_hardware_cursors = false,
+	},
 })

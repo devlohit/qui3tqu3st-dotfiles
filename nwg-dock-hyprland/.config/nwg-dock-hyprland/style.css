@@ -1,0 +1,20 @@
+window {
+    background-color: rgba(30, 30, 46, 0.55);   /* base, semi-transparent for the blur */
+    border-radius: 10px;
+    padding: 14px 8px;
+}
+
+button {
+    background: none;
+    border-style: none;
+    margin: 0 3px;              /* nicely separated icons */
+    border-radius: 10px;
+    transition: background-color 120ms ease-in-out;
+    padding: 6px;
+}
+
+button:hover {
+    background-color: rgba(69, 71, 90, 0.8);   /* surface0 */
+    border-radius: 10px;
+}
+
