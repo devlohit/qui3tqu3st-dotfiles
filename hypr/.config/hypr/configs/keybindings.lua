@@ -35,9 +35,15 @@ hl.bind(mainMod .. " + " .. "Print", hl.dsp.exec_cmd("grim ~/Pictures/Screenshot
 -- Hyprshot
 
 -- Screenshot a window
-hl.bind(ctrl .. " + " .. alt .. " + " .. "w", hl.dsp.exec_cmd("hyprshot -m window"))
+hl.bind(
+	ctrl .. " + " .. alt .. " + " .. "w",
+	hl.dsp.exec_cmd('hyprshot -m window -o "/home/qui3tqu3st/Pictures/Screenshots"')
+)
 -- Screenshot a region
-hl.bind(ctrl .. " + " .. alt .. " + " .. "r", hl.dsp.exec_cmd("hyprshot -m region"))
+hl.bind(
+	ctrl .. " + " .. alt .. " + " .. "r",
+	hl.dsp.exec_cmd('hyprshot -m region -o "/home/qui3tqu3st/Pictures/Screenshots"')
+)
 
 -- Move focus
 
