@@ -6,6 +6,7 @@
         
     "modules-left": [
         "custom/arch",
+        "group/media",
         "wlr/taskbar",
     ],
 
@@ -175,5 +176,27 @@
             "balanced": "",
             "power-saver": "󰌪"
         }
+    },
+    
+    "group/media": {
+        "orientation": "horizontal",
+        "modules": [
+            "custom/media-animation",
+            "custom/media-now-playing"
+        ],
+    },
+    "custom/media-now-playing": {
+      "exec": "~/.config/waybar/custom/media-now-playing.sh",
+      "exec-if": "playerctl status 2>/dev/null | grep -q '^Playing$'",
+      "tooltip": false,
+      "return-type": "text",
+      "on-click": "playerctl play-pause",
+      "on-click-middle": "playerctl previous",
+      "on-click-right": "playerctl next",
+      "max-length": 20,
+    },
+    "custom/media-animation": {
+      "exec": "~/.config/waybar/custom/media-animation.sh",
+      "tooltip": false,
     },
 }

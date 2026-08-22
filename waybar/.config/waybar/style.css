@@ -2,7 +2,6 @@
 
 * {
     border: none;
-    border-radius: 0;
     font-family: "Rubik", "Font Awesome 6 Free", sans-serif;
     font-size: 14px;
     min-height: 0;
@@ -30,7 +29,8 @@ window#waybar.hidden {
 #battery,
 #tray,
 #custom-power,
-#power-profiles-daemon {
+#power-profiles-daemon,
+#media { 
     /* background:  rgba(30, 30, 46, 1); */
     background: #1e1e2e;
     padding: 4px 18px;
@@ -237,6 +237,7 @@ tooltip {
     background-clip: padding-box;
     color: #cdd6f4;
     border: 2px solid #74c7ec;
+    border-radius: 6px;
     padding: 6px 10px;
     box-shadow: none;
 }
@@ -244,3 +245,18 @@ tooltip {
 tooltip label {
     color: #cdd6f4;
 }
+
+#media {
+    font-size: 12px;
+    color: #42ff9f;
+}
+
+#custom-media-animation {
+    font-size: 10px;
+    margin-right: 8px;
+}
+
+#custom-media-now-playing {
+    font-family: "JetBrainsMono Nerd Font Mono", monospace;
+}
+
