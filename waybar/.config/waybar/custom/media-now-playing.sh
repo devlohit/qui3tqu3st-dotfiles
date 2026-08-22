@@ -62,6 +62,6 @@ while true; do
         unset zscroll_pid
     else
         printf '%s\n' "$ICON"
-        sleep 1
+        sleep 0
     fi
 done
