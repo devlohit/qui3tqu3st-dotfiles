@@ -236,8 +236,7 @@ tooltip {
     background: #1e1e2e;
     background-clip: padding-box;
     color: #cdd6f4;
-    border: 2px solid #cba6f7;
-    border-radius: 0px;
+    border: 2px solid #74c7ec;
     padding: 6px 10px;
     box-shadow: none;
 }

@@ -10,7 +10,12 @@ button {
     margin: 0 3px;              /* nicely separated icons */
     border-radius: 10px;
     transition: background-color 120ms ease-in-out;
-    padding: 6px;
+    padding: 3px;
+}
+
+#active {
+    border-bottom: 1px solid;
+    border-color: rgba(202, 158, 230, 0.9);
 }
 
 button:hover {
