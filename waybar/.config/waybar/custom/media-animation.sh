@@ -10,7 +10,7 @@ while :; do
     if [ "$status" == "Playing" ]; then
         echo "$frame"
     elif [ "$status" == "Paused" ]; then
-        echo ""
+        echo ""
     else
         echo ""
     fi
