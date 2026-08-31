@@ -1,19 +1,42 @@
 #!/usr/bin/env bash
 
 # "▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"
+blocks=(▁ ▂ ▃ ▄ ▅ ▆ ▇ █)
 
-animation_frames=("▂▄▆" "▄▂▆" "▄▆▂" "▆▄▂" "▆▂▄")
-while :; do
-  for frame in "${animation_frames[@]}"; do
-    status=$(playerctl metadata --format '{{status}}' 2>/dev/null)
+frame_delay=0.08
+paused_icon=""
 
-    if [ "$status" == "Playing" ]; then
-        echo "$frame"
-    elif [ "$status" == "Paused" ]; then
-        echo ""
-    else
-        echo ""
-    fi
-    sleep 0.1
+levels=(0 1 2 3 4 5 6 7 6 5 4 3 2 1)
+cycle_len=${#levels[@]}
+offsets=(0 5 9)   # phase offset per bar — spread across the cycle
+ 
+animation_frames=()
+for ((f = 0; f < cycle_len; f++)); do
+  frame=""
+  for offset in "${offsets[@]}"; do
+    idx=$(( (f + offset) % cycle_len ))
+    frame+="${blocks[${levels[$idx]}]}"
   done
+  animation_frames+=("$frame")
+done
+
+while :; do
+  status=$(playerctl metadata --format '{{status}}' 2>/dev/null)
+
+  if [ "$status" == "Playing" ]; then
+    for frame in "${animation_frames[@]}"; do
+      status=$(playerctl metadata --format '{{status}}' 2>/dev/null)
+      [ "$status" == "Playing" ] || break
+      echo "$frame "
+      sleep "$frame_delay"
+    done
+  elif [ "$status" == "Paused" ]; then
+    status=$(playerctl metadata --format '{{status}}' 2>/dev/null)
+    [ "$status" == "Paused" ] || break
+    echo "$paused_icon "
+    sleep "$frame_delay"
+  else
+    echo ""
+    sleep "$frame_delay"
+  fi
 done

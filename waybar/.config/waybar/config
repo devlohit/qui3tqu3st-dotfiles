@@ -7,7 +7,6 @@
     "modules-left": [
         "custom/arch",
         "group/media",
-        "wlr/taskbar",
     ],
 
     "modules-center": [

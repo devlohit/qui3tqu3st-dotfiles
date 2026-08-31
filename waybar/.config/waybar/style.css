@@ -8,9 +8,7 @@
  }
 
 window#waybar {
-    /* background: rgba(30, 30, 46, 1); */
     background: none;
-    color: #cdd6f4;
 }
 
 window#waybar.hidden {
