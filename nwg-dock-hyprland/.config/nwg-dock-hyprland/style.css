@@ -1,5 +1,5 @@
 window {
-    background-color: rgba(30, 30, 46, 0.55);   /* base, semi-transparent for the blur */
+    background-color: rgba(30, 30, 46, 1);   /* base, semi-transparent for the blur */
     border-radius: 10px;
     padding: 14px 8px;
 }

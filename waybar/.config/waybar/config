@@ -15,8 +15,8 @@
         "pulseaudio",
         "network",
         "bluetooth",
-        "tray",
         "battery",
+        "tray",
         "custom/power",
         "power-profiles-daemon",
     ],
@@ -145,11 +145,15 @@
             "warning": 30,
             "critical": 15
         },
-        "format": "󰂀   {capacity}%",
-        "format-charging": "󰂄   {capacity}%",
-        "format-plugged": "󰂄   {capacity}%",
+        "format": "󰂀",
+        "format-charging": "󰂄",
+        "format-plugged": "󰂄",
         "format-icons": ["", "", "", "", ""],
-        "max-length": 25
+        "max-length": 25,
+        "tooltip": true,
+        "tooltip-format": "Discharging: {capacity}%",
+        "tooltip-format-full": "Fully Charged: {capacity}%",
+        "tooltip-format-plugged": "Plugged In: {capacity}%"
     },
     
     "tray": {
